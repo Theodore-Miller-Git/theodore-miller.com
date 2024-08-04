@@ -1,0 +1,455 @@
+@import "../../../vars.css";
+@import "./breakpoints.scss";
+
+#body-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif, Arial;
+    @include media('>=phone'){
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+    }
+    .sub-title{
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+    }
+    
+    #contact-container{
+        border-radius: 1rem;
+        width: 53vw;
+        display: flex;
+        overflow: hidden;
+        padding: 0.6rem;
+        background-color: rgba(109, 43, 196, 0.3);
+        background-size: cover;
+        border: 1px solid rgba(255,255,255,0.1);
+        -webkit-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);;
+        .contact-info{
+            background-color: #5904c2;
+            border-radius: 1rem;
+            flex: 0 1 40%;
+            padding: 2rem;
+            color: white;
+            flex-direction: column;
+            text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+            h4{
+                font-size: 2.1rem;
+                font-weight: 300;
+                padding: 0.6rem;
+                margin-left: 0rem;
+                text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                margin: 0;
+                text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+            }
+            p{
+                margin-bottom: 3rem;
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 1.2rem;
+                font-weight: 300;
+                text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                justify-content: center;
+                text-align: center;
+            }
+            .icon-text{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 3rem;
+                .fa{
+                    flex: 0 0 1rem;
+                    font-size: 1.8rem;
+                    margin-right: 2rem;
+                    
+                }
+                span{
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                    text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                    padding-left: 2rem;
+                }
+            }
+            .social-media{
+                height: 2rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                .icon-circle{
+                    color: #ffffff;
+                    fill: #3e8e41;
+                    flex: 0 0 2.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    background-color: rgba(144, 77, 252, 0.4);
+                    transition: .3s all ease-in-out;
+                    &:hover {
+                        background-color: rgba(144, 77, 252, 3.0);
+                    }
+                    
+                }
+            }
+        }
+        form{
+            padding: 40px;
+            width: 100%;
+            .col{
+                display: flex;
+                width: 100%;
+                flex: 0 0 100%;
+            }    
+            .form-group{
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                flex: 0 1 100%;
+                padding-right: 40px;
+                label{
+                    font-size: 0.9rem;
+                    color: rgb(144, 77, 252,1);
+                    margin-bottom: 1rem;
+                    text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                }
+                input[type="text"], input[type="email"], input[type="tel"], textarea{
+                    // background: rgba(255,255,255,.2);
+                    background-color: transparent;
+                    border: none;
+                    padding: 10px;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    cursor: pointer;
+                    color: white;
+                    border-bottom: 2px solid rgb(144, 77, 252,0.5);
+                    transition: all .3s ease-in-out;
+                    margin-bottom: 2rem;
+                    &:focus{
+                        outline: none;
+                        border-bottom: 2px solid rgb(144, 77, 252,1.0);
+                    }
+                }
+                &:nth-child(2){
+                    padding-right: 0;
+                }
+                #radio-buttons{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 2rem;
+                    .radio-button{
+                        margin-right: 3rem;
+                    }
+                    label{
+                        font-size: 1.2rem;
+                        padding-left: 0.5rem;
+                        color: rgb(147, 77, 252,0.9);;
+                    }
+                    input[type="radio"]:checked + label{
+                        color: rgb(166, 110, 255,1.0);
+                        font-weight: 700;
+                    }
+                }
+                &.solo{
+                    padding: 0;
+                }
+                &.right{
+                    align-items: flex-end;
+                }
+                button{
+                    width: 12rem;
+                    height: 4rem;
+                    cursor: pointer;
+                    color: white;
+                    font-size: 1.1rem;
+                    text-align: center;
+                    background: rgb(144, 77, 252,0.5);
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 1rem;
+                    box-shadow: 0px 0px 1rem 0.1rem rgba(117, 117, 117, 0.47);
+                }
+            }
+            .message{
+                width: 100%;
+                display: flex;
+                position: relative;
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            .message .success{
+                font-size: 2rem;
+                color: green;
+                position: absolute;
+                text-shadow: 0px 0px 1rem 0.1rem rgba(117, 117, 117, 0.47);
+                font-weight: 700;
+                animation: buttons .3s linear;
+                display: none;
+            }
+            .message .danger{
+                font-size: 2rem;
+                color: green;
+                position: absolute;
+                text-shadow: 0px 0px 1rem 0.1rem rgba(117, 117, 117, 0.47);
+                font-weight: 700;
+                animation: buttons .3s linear;
+                display: none;
+            }
+            .nodisplay{
+                display: none;
+            }
+            @keyframes buttons {
+                0%{
+                    transform: scale(0.5);
+                }
+                50%{
+                    transform: scale(0.1);
+                }
+                100%{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    
+
+    }
+    @include media('<=phone'){
+        h1{
+            display: flex;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+        }
+        .sub-title{
+            display: flex;
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+            text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+        }
+        
+        #contact-container{
+            border-radius: 1rem;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 0.6rem;
+            background-color: rgba(109, 43, 196, 0.3);
+            background-size: cover;
+            border: 1px solid rgba(255,255,255,0.1);
+            -webkit-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.75);;
+            margin-bottom: 10%;
+            .contact-info{
+                background-color: #5904c2;
+                border-radius: 1rem;
+                flex: 0 1 40%;
+                padding: 2rem;
+                color: white;
+                flex-direction: column;
+                text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                h4{
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    padding: 0.6rem;
+                    margin-left: 0rem;
+                    text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                    margin: 0;
+                    text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                }
+                p{
+                    margin-bottom: 3rem;
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                    justify-content: center;
+                    text-align: center;
+                }
+                .icon-text{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    .fa{
+                        flex: 0 0 1rem;
+                        font-size: 1.8rem;
+                        margin-right: 2rem;
+                        
+                    }
+                    span{
+                        font-size: 1.1rem;
+                        font-weight: 300;
+                        text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                        padding-left: 2rem;
+                    }
+                }
+                .social-media{
+                    height: 2rem;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .icon-circle{
+                        color: #ffffff;
+                        fill: #3e8e41;
+                        flex: 0 0 2.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 2.5rem;
+                        border-radius: 50%;
+                        background-color: rgba(144, 77, 252, 0.4);
+                        transition: .3s all ease-in-out;
+                        &:hover {
+                            background-color: rgba(144, 77, 252, 3.0);
+                        }
+                        
+                    }
+                }
+            }
+            form{
+                padding: 1rem;
+                width: 80%;
+                .col{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 100%;
+                    flex: 0 0 100%;
+                }    
+                .form-group{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex: 0 1 100%;
+                    padding-right: 1.5rem;
+                    label{
+                        font-size: 0.9rem;
+                        color: rgb(144, 77, 252,1);
+                        margin-bottom: 1rem;
+                        text-shadow: 0px 1px 3px rgba(2, 2, 2, 0.6);
+                    }
+                    input[type="text"], input[type="email"], input[type="tel"], textarea{
+                        // background: rgba(255,255,255,.2);
+                        display: flex;
+                        flex-direction: column;
+                        background-color: transparent;
+                        border: none;
+                        padding: 0.5rem;
+                        font-size: 1.5rem;
+                        font-weight: 300;
+                        width: 100%;
+                        cursor: pointer;
+                        color: white;
+                        border-bottom: 2px solid rgb(144, 77, 252,0.5);
+                        transition: all .3s ease-in-out;
+                        margin-bottom: 2rem;
+                        &:focus{
+                            outline: none;
+                            border-bottom: 2px solid rgb(144, 77, 252,1.0);
+                        }
+                    }
+                    &:nth-child(2){
+                        padding-right: 0;
+                    }
+                    #radio-buttons{
+                        display: flex;
+                        justify-content: flex-start;
+                        margin-bottom: 2rem;
+                        .radio-button{
+                            margin-right: 2rem;
+                        }
+                        label{
+                            margin-left: 0.25rem;
+                            font-size: 1.0rem;
+                            text-align: center;
+                            padding-left: 0.5rem;
+                            padding-right: 1.5rem;
+                            color: rgb(147, 77, 252,0.9);;
+                        }
+                        input[type="radio"]:checked + label{
+                            color: rgb(166, 110, 255,1.0);
+                            font-weight: 700;
+                        }
+                    }
+                    &.solo{
+                        padding: 0;
+                    }
+                    &.right{
+                        align-items: flex-end;
+                    }
+                    button{
+                        width: 12rem;
+                        height: 4rem;
+                        cursor: pointer;
+                        color: white;
+                        font-size: 1.1rem;
+                        text-align: center;
+                        background: rgb(144, 77, 252,0.5);
+                        text-transform: uppercase;
+                        border: none;
+                        border-radius: 1rem;
+                        box-shadow: 0px 0px 1rem 0.1rem rgba(117, 117, 117, 0.47);
+                    }
+                }
+                .message{
+                    width: 100%;
+                    display: flex;
+                    position: relative;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    justify-content: center;
+                }
+                .message .success{
+                    text-align: center;
+                    padding-left: 3rem;
+                    font-size: 0.9rem;
+                    color: green;
+                    position: absolute;
+                    text-shadow: 0px 0px 1rem 0.1rem rgba(117, 117, 117, 0.47);
+                    font-weight: 700;
+                    animation: buttons .3s linear;
+                    display: none;
+                }
+                .message .danger{
+                    text-align: center;
+                    padding-left: 3rem;
+                    font-size: 0.9rem;
+                    color: green;
+                    position: absolute;
+                    text-shadow: 0px 0px 1rem 0.1rem rgba(117, 117, 117, 0.47);
+                    font-weight: 700;
+                    animation: buttons .3s linear;
+                    display: none;
+                }
+                .nodisplay{
+                    display: none;
+                }
+                @keyframes buttons {
+                    0%{
+                        transform: scale(0.5);
+                    }
+                    50%{
+                        transform: scale(0.1);
+                    }
+                    100%{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+
+    }
+}

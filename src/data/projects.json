@@ -1,0 +1,26 @@
+[
+  {
+    "title": "HomeLab",
+    "imageSrc": "projects/HomeLab.png",
+    "description": "Created a versatile HomeLab setup for testing and learning various IT configurations, enhancing skills in network design, virtualization, and system management.",
+    "skills": ["Systems", "Networking", "Virtualization"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Home Automation",
+    "imageSrc": "projects/Home_Automation.png",
+    "description": "Developed a comprehensive home automation system that integrates smart devices for seamless control, improving convenience and energy efficiency.",
+    "skills": ["IoT", "Automation", "Connectivity", "Integration"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Coding",
+    "imageSrc": "projects/Coding.png",
+    "description": "Worked on diverse coding projects that showcase proficiency in various programming languages and problem-solving skills, delivering effective and innovative solutions.",
+    "skills": ["Logic", "Solutions", "Programming"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Performance Optimization",
+    "imageSrc": "experience/skills/performance.png"
+  },
+  {
+    "title": "Client Retention",
+    "imageSrc": "experience/skills/clientretention.png"
+  },
+  {
+    "title": "Solution Implementation",
+    "imageSrc": "experience/skills/solution_implementation.png"
+  },
+  {
+    "title": "Strategic Consultations",
+    "imageSrc": "experience/skills/consultation.png"
+  },
+  {
+    "title": "Cross-Functional Collaboration",
+    "imageSrc": "experience/skills/collab.png"
+  },
+  {
+    "title": "Strategic Planning",
+    "imageSrc": "experience/skills/planning.png"
+  },
+  {
+    "title": "Technical Analysis",
+    "imageSrc": "experience/skills/analysis.png"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "role": "Enterprise Sales Engineer",
+    "organisation": "Tech3",
+    "startDate": "Aug, 2023",
+    "endDate": "Present",
+    "experiences": [
+      "Leveraged industry trends for strategic decision-making.",
+      "Align technology with strategic business objectives.", 
+      "Cultivate customer relationships and deliver support.",
+      "Increased sales win rates by 25%."],
+    "imageSrc": "experience/history/tech3.png"
+  },
+  {
+    "role": "Enterprise Sales Engineer",
+    "organisation": "WinMagic",
+    "startDate": "Feb, 2020",
+    "endDate": "Apr, 2023",
+    "experiences": [
+      "Increased sales win rates by 50%.", 
+      "Supervised a team of 20 individuals.",
+      "Optimized sales processes and drove growth.",
+      "Provided rapid solutions, enhancing operational efficiency."],
+    "imageSrc": "experience/history/winmagic.png"
+  },
+  {
+    "role": "Network Field Specialist",
+    "organisation": "Braintech",
+    "startDate": "Mar, 2017",
+    "endDate": "Feb, 2020",
+    "experiences": [
+      "Improved network performance and reliability.",
+      "Generated detailed quarterly reports for management.",
+      "Delivered on-site support with effective troubleshooting.",
+      "Enhanced network efficiency and security."
+    ],
+    "imageSrc": "experience/history/braintech.png"
+  }
+]
